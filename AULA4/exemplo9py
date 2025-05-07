@@ -1,0 +1,40 @@
+# Solicita ao usuário o número inicial da sequência
+inicio = int(input("Informe o primeiro número: "))
+
+# Solicita ao usuário o número final da sequência
+fim = int(input("Informe número final: "))
+
+# Solicita ao usuário o valor do salto (incremento) entre os números da sequência
+salto = int(input("Informe o salto: "))
+
+# Inicializa uma string para armazenar o texto do cálculo
+texto = "Cálculo: "
+
+# Inicializa a variável soma com 0 para acumular a soma dos números
+soma = 0
+
+# Inicia um loop para iterar pelos números no intervalo especificado
+for numero in range(inicio, fim, salto):
+    # Adiciona o número atual à soma acumulada
+    soma = soma + numero
+
+    # Adiciona o número atual ao texto do cálculo
+    texto = texto + str(numero)
+
+    # Verifica se o número atual é maior que 50
+    if numero > 50:
+        # Adiciona uma mensagem ao texto indicando que passou de 50
+        texto = texto + "\nPassou de 50"
+        # Interrompe o loop
+        break
+
+    # Verifica se o número atual não é o último número da sequência
+    if numero != fim-1:
+        # Adiciona um símbolo de soma ao texto
+        texto = texto + " + "
+
+        # Exibe o texto do cálculo até o momento
+        print(f"{texto}")
+
+        # Exibe a soma acumulada até o momento
+        print(f"Soma: {soma}")
