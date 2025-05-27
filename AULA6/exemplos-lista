@@ -1,0 +1,45 @@
+# Cria uma lista com alguns números
+lista = [4, 5, 3, 5]
+print(lista)
+
+# Adiciona o número 2 ao final da lista
+lista.append(2)
+print(lista)
+
+# Insere o número -3 na posição 2
+lista.insert(2, -3)
+print(lista)
+
+# Remove o primeiro elemento com valor 4
+lista.remove(4)
+print(lista)
+
+# Ordena a lista em ordem crescente
+lista.sort()
+print(lista)
+
+# Inverte a ordem dos elementos da lista
+lista.reverse()
+print(lista)
+
+# Conta quantas vezes o número 5 aparece na lista
+qnt = lista.count(5)
+print(qnt)
+
+# Remove e retorna o último elemento da lista
+exc = lista.pop()
+
+print(lista)
+print(exc)
+
+# Remove o elemento na posição 2
+del lista[2]
+print(lista)
+
+# Remove os elementos da posição 2 até a 4 (não inclui a 5)
+del lista[2:5]
+print(lista)
+
+# Remove todos os elementos da lista
+lista.clear()
+print(lista)
